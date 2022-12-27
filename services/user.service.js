@@ -15,7 +15,6 @@ const createUser = async(body) => {
             success:true,
             statusCode:config.STATUS_CODE.CREATED,
             message:'SIGN UP SUCCESFULLY....',
-            result,
         }
     }
 }

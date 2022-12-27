@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "dbf3426c-438a-4d27-ba4d-4e7a2475cfdf",
+		"name": "binaryveda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"jayesh\",\r\n    \"email\":\"jayeshjadhav684@gmail.com\",\r\n    \"age\":3,\r\n    \"password\":\"jayesh123\",\r\n    \"address\":{\r\n        \"city\":\"pune\",\r\n        \"state\":\"maharashtra\",\r\n        \"area\":\"madhuban society\",\r\n        \"zipcode\":424001\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-binaryveda-task.onrender.com/user/signUp",
+					"protocol": "https",
+					"host": [
+						"node-binaryveda-task",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"user",
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"jayeshjadhav684@gmail.com\",\r\n    \"password\":\"jayesh123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-binaryveda-task.onrender.com/user/login",
+					"protocol": "https",
+					"host": [
+						"node-binaryveda-task",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
